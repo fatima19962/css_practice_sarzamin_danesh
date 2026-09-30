@@ -1,0 +1,30 @@
+.outliner_input{
+    border:none;
+    border-bottom: 2px solid #d93e0b;
+    /* border-left: 2px solid #d93e0b; */
+    /* border-radius: 5px; */
+    background: transparent;
+    transition: border 0.3s;
+    outline: none;
+    /* width: 99%; */
+    padding-left: 40px;
+}
+body{
+    /* background: #ddd; */
+}
+
+.outliner_input:focus{
+    border-bottom-color: #992803;
+    /* border-left-color: #992803; */
+}
+.input_with_icon{
+    position: relative;
+    /* background: green; */
+}
+.input_with_icon::before{
+    content: "X";
+    position: absolute;
+    left: 10px;
+    right: 100%;
+    transform: translateX(-100%);
+}

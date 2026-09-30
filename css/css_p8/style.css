@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: #2c3e50;
+  /* color:#fff; */
+  padding: 16px;
+  line-height: 1.5;
+  direction: rtl;
+}
+.survey_form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fcfcfc;
+  color: #323232;
+}
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2rem;
+  color: #354b60;
+  margin-bottom: 16px;
+}
+.form_group {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.custom_checkbox,
+.custom_radio {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+.custom_checkbox input,
+.custom_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background: #eee;
+  border-radius: 2px;
+  transition: all 0.3;
+}
+.checkradio {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background: #eee;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.custom_checkbox:hover .checkmark,
+.custom_radio:hover .checkradio {
+  background-color: #ddd;
+}
+.custom_checkbox input:checked ~ .checkmark {
+  background-color: #354b60;
+}
+.custom_radio input:checked ~ .checkradio {
+  background-color: #1cd20e;
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.custom_checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+.checkradio::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5.5px;
+  top: 5.5px;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border: solid #fff;
+  border-radius: 50px;
+}
+.custom_radio input:checked ~ .checkradio::after {
+  display: block;
+}
+.btn_submit {
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  max-width: 600px;
+  background: #27ae60;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.group_submit {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}

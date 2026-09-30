@@ -1,0 +1,80 @@
+/* img { */
+  /* width: 150px; */
+  /* height: 150px; */
+  /* border:13px solid #333;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #07769f;
+    opacity: 0.1; */
+  /* mix-blend-mode: multiply; */
+  /* filter: grayscale(100%); */
+  /* background: linear-gradient(45deg, #015b23, #07769f); */
+/* } */
+/*.image {
+  /* width: 100%;
+    height: auto; */
+  /* border: 13px solid #333;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px #07769f;
+  opacity: 0.5; */
+/* } */
+/*.image:hover {
+  opacity: 1;
+  mix-blend-mode: luminosity;
+}*/
+.image_container {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+.image_container h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fcfcfc;
+  mix-blend-mode: overlay;
+  font-size: 3rem;
+}
+/* body {
+  background: #333;
+} */
+.light-effect {
+  background: radial-gradient(circle, white, transparent);
+  mix-blend-mode: color-dodge;
+}
+
+
+
+/* session 2 */
+
+.blend-exam{
+    position: relative;
+    width:200%;
+    height: 100vh;
+    /* width:200px;
+    height: 100px; */
+}
+
+.background{
+    background: linear-gradient(to right,#ff0000,#07769f);
+    width: 100%;
+    height: 100%;
+}
+
+.forground{
+    background: linear-gradient(to bottom,#00ff00,transparent);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    mix-blend-mode: screen;
+}
+
+
+.bg-image{
+    width:100%;
+    height: 100px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../media/pictures/pic_profile.webp') center/cover;
+    
+}

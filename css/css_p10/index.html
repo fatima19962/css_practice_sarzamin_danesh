@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Audio/video</title>
+  </head>
+  <body>
+    <!-- <audio src="Puzzle Band - Jadeh (128).mp3" controls></audio> -->
+    <div class="custom_audio_player">
+      <audio src="Puzzle Band - Jadeh (128).mp3" id="audio_source"></audio>
+      <button class="play_btn">&#9654;</button>
+      <input
+        type="range"
+        name="timeline"
+        id="timeline"
+        title="timeline"
+        class="progress_bar"
+        value="0"
+      />
+      <button class="mute_btn">🔊</button>
+      <input
+        type="range"
+        name="volumeSlider"
+        id="volumeSlider"
+        title="volumeSlider"
+        class="volume_Slider"
+        min="0"
+        max="1"
+        step="0.1"
+        value="1"
+      />
+    </div>
+    <script>
+        const audio = document.getElementById('audio_source');
+        const btnPlay=document.querySelector('.play_btn');
+        const progressBar = document.querySelector('.progress_bar');
+        // const progressBar = document.getElementsByClassName('.progress_bar');
+        btnPlay.addEventListener('click',()=>{
+            if(audio.paused){
+                audio.play();
+                btnPlay.textContent='\u{23F8}';
+            }else{
+                audio.pause();
+                btnPlay.textContent='\u{25B6}'
+            }
+        });
+        audio.addEventListener('timeupdate',()=>{
+            progressBar.value=(audio.currentTime/audio.duration)*100;
+        })
+    </script>
+  </body>
+</html>

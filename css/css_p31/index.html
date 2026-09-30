@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div class="card-container">
+    <div class="card">
+        <h2>www</h2>
+    </div>
+  </div>   -->
+
+<!-- 
+  <div class="card">
+    <h2 class="title">www</h2>
+  </div> -->
+
+
+
+
+
+  <!-- <div class="controls">
+    <button onclick="moveAnchor()">Move Anchor</button>
+    <button onclick="togglePositioning()">Change position</button>
+  </div>
+<div class="container">
+  <div class="anchor-element" id="anchor1">ancher1</div>
+  <div class="anchor-element" id="anchor2">ancher2</div>
+
+  <div class="positioned-element">position01</div>
+  <div class="positioned-element2">position02</div>
+</div>
+<script>
+  let positionState=0;
+  function moveAnchor(){
+    const anchor1=document.getElementById('anchor1');
+    const newTop=Math.random()*300;
+    const newLeft=Math.random*600;
+    anchor1.style.top= `${newTop}px`;
+    anchor1.style.newLeft= `${newLeft}px`;
+  }
+  function togglePositioning(){
+    const element= document.querySelector('.positioned-element')
+    positionState=(positionState+1)%3;
+    switch(positionState){
+      case 0:
+        element.style.top='anchor(bottom)';
+        element.style.left='anchor(right)';
+        break;
+      case 1:
+        element.style.top='anchor(center)';
+        element.style.left='anchor(center)';
+        break;
+      case 2:
+        element.style.top='anchor(top)';
+        element.style.left='anchor(left)';
+        break;
+
+    }
+  }
+</script> -->
+
+
+
+
+<form action="">
+  <label for="name">Name:</label>
+  <input type="text" id="name" required minlength="3">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  <label for="password"> password</label>
+  <input type="password" name="password" id="password" required minlength="6">
+  <button type="submit">Register</button>
+</form>
+</body>
+</html>

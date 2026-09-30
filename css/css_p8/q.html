@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>فرم نظر سنجی</title>
+  </head>
+  <body>
+    <div class="survey_form">
+      <h1>نظر سنجی محصول</h1>
+      <div class="form_group">
+        <h2>از چه ویژگی این محصول راضی هستید؟(چند گزینه ای )</h2>
+        <label  class="custom_checkbox" for="design">
+          <input type="checkbox" name="design" id="design" value="design" />
+          <span class="checkmark"></span>
+          طراحی محصول
+        </label>
+        <label for="action" class="custom_checkbox">
+          <input type="checkbox" name="action" id="action" value="action" />
+          <span class="checkmark"></span>
+          فعالیت محصول
+        </label>
+        <label for="price" class="custom_checkbox">
+          <input type="checkbox" name="price" id="price" value="price" />
+          <span class="checkmark"></span>
+          قیمت محصول
+        </label>
+      </div>
+      <div class="form_group">
+        <h2>چه امتیازی به محصول می دهید ؟</h2>
+        <label for="r5" class="custom_radio">
+          <input type="radio" name="rating" id="r5" value="rating" />
+          <span class="checkradio"></span>
+          عالی -5 ستاره
+        </label>
+        <label for="r4" class="custom_radio">
+          <input type="radio" name="rating" id="r4" value="rating" />
+          <span class="checkradio"></span>
+          خوب  -4 ستاره
+        </label>
+        <label for="r3" class="custom_radio">
+          <input type="radio" name="rating" id="r3" value="rating" />
+          <span class="checkradio"></span>
+          متوسط -3 ستاره
+        </label>
+        <label for="r2" class="custom_radio">
+          <input type="radio" name="rating" id="r2" value="rating" />
+          <span class="checkradio"></span>
+          ضعیف -2 ستاره
+        </label>
+        <label for="r1" class="custom_radio">
+          <input type="radio" name="rating" id="r1" value="rating" />
+          <span class="checkradio"></span>
+          خیلی ضعیف -1 ستاره
+        </label>
+
+
+      </div>
+      <div class="group_submit">
+              <button type="submit" class="btn_submit">ارسال نظر</button>
+
+      </div>
+    </div>
+  </body>
+</html>

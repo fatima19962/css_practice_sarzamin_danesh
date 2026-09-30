@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://" method="get" target="_blank">
+      <fieldset>
+        <legend>Login</legend>
+        <input
+          placeholder="crftoken"
+          readonly
+          type="text"
+          title="token"
+          value="https://Lssc.ir"
+          hidden
+        />
+        <input placeholder="username" type="text" title="username" />
+        <input
+          placeholder="password"
+          type="password"
+          title="password"
+          disabled
+        />
+        <select name="type-login" id="type-login">
+          <option value="0">Choice</option>
+          <option value="1">Student</option>
+          <option value="2">Teacher</option>
+          <option value="3">Manager</option>
+        </select>
+        <input type="checkbox" name="rem" id="rem" title="remember" />
+        <label class="label-inline" for="rem">Save Info Login</label>
+
+        <input type="submit" value="sign in" title="login" />
+      </fieldset>
+      <fieldset>
+        <legend>other login</legend>
+        <input type="button" value="Google">
+        <input type="button" value="Apple">
+        <input type="button" value="Github">
+      </fieldset>
+      <fieldset>
+        <legend>Register Blog</legend>
+        <textarea name="blog" id="blog"></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>

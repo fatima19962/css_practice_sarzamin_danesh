@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="search-form">
+      <input type="text" class="search-form__input" />
+      <button class="search-form__btn search-form__btn--disable"></button>
+    </div>
+    <!-- block  -->
+    <div class="card">
+      <div class="nav"></div>
+      <!-- element -->
+      <img class="card__image" src="" alt="" />
+      <!-- elemnet with modifier -->
+      <h2 class="card__title card__title--highlighted">Title product</h2>
+      <!-- element -->
+      <p class="card__description">description</p>
+    </div>
+
+    <!-- nested bem -->
+    <div class="block">
+      <div class="block__elem1">
+        <div class="block__elem1__elem2">
+          <div class="block__elem1__elem2__elem3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown dropdown--open">
+      <button class="dropdown__toggle">menu</button>
+      <ul class="dropdown__menu">
+        <li class="dropdown__item">item01</li>
+        <li class="dropdown__item">item02</li>
+      </ul>
+    </div>
+
+
+    <div class="card">
+        <div class="card__header">
+            <h3 class="title title--small">Title Card</h3>
+        </div>
+        <div class="card__body">
+            <p class="text">description</p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="title title--small">Title Card</h3>
+        </div>
+        <div class="card-body">
+            <p class="text">description</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-error is-disable" disabled>Send</button>
+        </div>
+    </div>
+
+
+
+    <form action="">
+      <div class="form-group">
+        <label for="">email</label>
+        <input type="email" name="email" id="email" aria-describedby="email-help">
+        <small id="email-help" aria-expanded="true">Please enter email</small>
+      </div>
+    </form>
+
+
+    <table>
+      <tbody>
+        <tr>
+          <td data-label="name">Erfan</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
