@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>video</title>
+  </head>
+  <body>
+   <!-- <video src="video.mp4" controls></video> -->
+    <div class="custom-video-player">
+      <video src="video.mp4" id="custom_video"></video>
+      <div class="controls">
+        <button class="btn-play"> &#9205;</button>
+        <input type="range" name="timeline" id="timeline" value="0" class="timeline" title="timeline">
+        <button class="btn-fullscreen">&#9974</button>
+      </div>
+    </div>
+    <script>
+      const video = document.getElementById('custom_video');
+      const btnPlay=document.querySelector('.btn-play');
+      const TimeLine=document.querySelector('.timeline');
+      btnPlay.addEventListener('click',()=>{
+           if(video.paused){
+            video.play();
+            btnPlay.textContent="\u{23F8}";
+           }else{
+            video.pause();
+            btnPlay.textContent="\u{25B6}";
+           }
+      });
+      video.addEventListener('timeupdate',()=>{
+        console.log(video.currentTime);
+        console.log(video.duration);
+        TimeLine.value=(video.currentTime/video.duration)*100;
+        console.log(TimeLine.value)
+      });
+      TimeLine.addEventListener('input',()=>{
+        video.currentTime = (TimeLine.value/100)*video.duration
+      });
+    </script>
+  </body>
+</html>
