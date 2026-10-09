@@ -1,0 +1,44 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* list-style-type: circle; */
+  display: grid;
+  grid-auto-flow: column;
+  /* display: flex; */
+  gap: 5px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+ul li {
+  display: inline-block;
+  margin-right: 0;
+}
+ul:last-child {
+  margin-right: 0px;
+}
+ol {
+  /* list-style-type: trad-chinese-informal; */
+  /* list-style-position: outside; */
+  /* list-style-position: inside; */
+  /* background-color:yellow ; */
+  /* list-style-image: url('https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f408-2b1b.svg'); */
+  list-style: none;
+  background: rgb(22, 230, 230);
+}
+ol > li {
+  background: url("https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f408-2b1b.svg")
+    no-repeat left center;
+  padding-left: 27px;
+  background-size: 25px;
+  margin-top: 5px;
+  color: red;
+  /* margin-bottom: 25px; */
+  /* background-color: aqua; */
+}
+ol:first-child {
+  margin-top: 0;
+}
+ol:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,45 @@
+ul.valed {
+  list-style: none;
+  padding-left: 0;
+}
+ul.valed li {
+  position: relative;
+  padding-left: 20px;
+}
+ul.valed li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(231, 156, 17);
+  margin-right: 8px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+ul.valed li:hover::before {
+  transform: scale(1.5);
+}
+
+ul.valed ul {
+  padding-left: 30px;
+  list-style: none;
+}
+ul.valed ul li::before {
+  content: "x";
+  background: none;
+
+}
+/* ul li::before{
+    content: '\f2c1';
+    position: absolute;
+    font-family: 'Font Awesome 7 Free';
+    left: 0;
+    color: #ff5722;
+} */
+/* ul li::before{
+    content: '➡️';
+    position: absolute;
+    left: 0;
+    color: #ff5722;
+} */
