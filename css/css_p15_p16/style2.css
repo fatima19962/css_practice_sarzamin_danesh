@@ -94,3 +94,45 @@
     cursor: pointer;
     margin-top: 10px;
 }
+
+
+.container{
+    columns: 3 ;
+    /* columns: 3 200px; */
+    /* column-count:3;
+    column-width: 200px; */
+    margin-top: 40px;
+    column-gap: 40px;
+    column-rule: 2px solid #ccc;
+    padding: 16px;
+}
+.container h2{
+    column-span: all;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.item{
+    background: #4caf50;
+}
+
+
+@media(max-width:600px){
+    /* .navbar{
+        background:#4caf50;
+    } */
+    .nav-link{
+        display:none;
+    }
+    .menu-res{
+        display: flex;
+        color:white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #316133;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
