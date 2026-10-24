@@ -1,23 +1,99 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontawsome.css" />
     <link rel="stylesheet" href="style.css" />
     <title>وب سایت</title>
   </head>
   <body>
     <header>
       <div>
-        <img src="https://lssc.ir/img/logo_lsscir.png" alt="سرزمین دانش" />
+        <img
+          class="logo"
+          src="https://lssc.ir/img/logo_lsscir.png"
+          alt="سرزمین دانش"
+        />
       </div>
       <div>
-        <div></div>
-        <div></div>
+        <!-- search -->
+        <div class="search_box">
+          <img class="search" src="media/search.svg" alt="جستجو" />
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="جستجو بخشی از عنوان دوره مقاله ...."
+          />
+        </div>
+        <!-- menu -->
+        <div class="menu">
+          <ul>
+            <li>
+              <i class="fas fa-laptop"></i>
+              سرزمین دانش
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              ویدئو گرام
+            </li>
+            <li>
+              <i class="fas fa-keyboard"></i>
+              متن گرام
+            </li>
+            <li>
+              <i class="fas fa-code"></i>
+              درباره ما
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>Button</div>
+      <div class="options">
+        <div class="option_login">
+          <a href=""> ورود</a>
+          <span>|</span>
+          <a href=""> ثبت نام</a>
+        </div>
+        <span>|</span>
+        <div class="option_icon">
+          <img src="media/support.png" alt="پشتیان سرزمین دانش" />
+          <img src="media/language-icon.png" alt="تغییر زبان" />
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div class="slider">
+        <img src="https://lssc.ir/img/banner_king.png" alt="" />
+        <!-- <img src="https://lssc.ir/img/teacher-1000.png" alt=""> -->
+      </div>
+      <section class="items">
+        <div class="item">
+          <div class="item_box">
+            <img src="https://lssc.ir/img/gallery/icons/graduate.png" alt="" />
+          </div>
+          <h2>دانشجو</h2>
+        </div>
+         <div class="item">
+          <div class="item_box">
+            <img src="https://lssc.ir/img/gallery/icons/certificate-3.png" alt="" />
+          </div>
+          <h2>دانشجو</h2>
+        </div>
+       <div class="item">
+          <div class="item_box">
+            <img src="https://lssc.ir/img/gallery/icons/online-test.png" alt="" />
+          </div>
+          <h2>دانشجو</h2>
+        </div>
+         <div class="item">
+          <div class="item_box">
+            <img src="https://lssc.ir/img/gallery/icons/calendar-2.png" alt="" />
+          </div>
+          <h2>دانشجو</h2>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
